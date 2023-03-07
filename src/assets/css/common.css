@@ -1,0 +1,77 @@
+@charset "utf-8";
+@import url("font.css");
+
+/* 태그초기화 */
+*{margin:0; padding:0; box-sizing:border-box;}
+html, body, h1, h2, h3, h4, h5, h6, hr, div, dl, dd, dt, ul, li, ol, form, fieldset, caption, table, th, td, textarea, select, iframe, input, legend, p, img, pre, q, button, blockquote{margin:0px; padding:0px;}
+html, body{/* height:100%; min-height:100%; */ font-family:"Noto Sans KR", "Malgun Gothic","Nanum Gothic","AppleSDGothicNeo-Light","Dotum","Arial", sans-serif; font-weight:400;  text-size-adjust : none;font-size:15px; color:#111; line-height:1;letter-spacing:-0.5px;}
+h1, h2, h3, h4, h5, h6{font-size:inherit;}
+ul, ol{list-style:none;}																																  
+button{border:0px; background:none; cursor:pointer; font:inherit; vertical-align:middle;}
+fieldset{border: 0;}
+em, address, i{ font-style:normal;}
+img{border:0px; vertical-align:top;max-width:100%;}
+a{text-decoration:none; color:#222;}
+/* a:link, a:visited, a:hover, a:active{color:inherit} */
+table{width:100%; border-spacing:0px; border-collapse:collapse;}
+/* caption{overflow:hidden; visibility:hidden; width:0; height:0; font-size:0; line-height:0;} */
+legend{position:absolute; top:0px; left:-9999px; font-size:0px; line-height:0px; text-indent:-9999px;}
+caption{position: relative;width: 1px;height: 1px;clip: rect(0,0,0,0);overflow: hidden;}
+legend{position: absolute;width: 1px;height: 1px;clip: rect(0,0,0,0);overflow: hidden;}
+hr{overflow:hidden; position:absolute; top:0px;left:-9999px; width:0; height:0;}
+input[type="submit"], input[type="reset"], input[type="image"]{border:0px; background:none; cursor:pointer;}
+input[type="checkbox"], input[type="radio"]{border:0px;}
+input[type="text"], select,button,input[type="tel"],input[type="password"]{font-family: "Noto Sans KR";/* font-size:inherit; color:inherit; border:0px;  */background:#fff;}
+select{height:39px;padding:0 10px;border:1px solid #ddd;}
+input[type="text"],input[type="password"],input[type="tel"],input[type="email"]{padding:10px;}
+.noscroll{overflow:hidden; position:absolute; width:100%;}
+.wrap{width:100%; min-height:100%; min-width:1080px;overflow: hidden;}
+#mask{z-index:9;top:0px;left:0px;width:100%;height:100%;background:#000;opacity:0.7;filter:Alpha(opacity=70); position:absolute;}
+.dim-layer{background-color:rgba(0,0,0,0.8);}
+a:focus, button:focus,input:focus,select:focus,textarea:focus{outline: 1px dotted #000;}
+input:-internal-autofill-selected{background:none;}
+strong{font-weight:500;}
+::placeholder{ color: #111 !important; opacity:1;}
+:-ms-input-placeholder{color:#111 !important;}
+::-ms-input-placeholder{color:#111 !important;}
+
+/* 공통클래스 */
+/* .skip{overflow:hidden; position:absolute; top:0px; left:-9999px; font-size:0px; line-height:0px; width:1px; height:1px; text-indent:-9999px;} */
+.skip{position: absolute;width: 1px;height: 1px;clip: rect(0 0 0 0);overflow: hidden;}
+/* .skip_navi a{ display:block;position:absolute;left:0;top: -100%; width: 200px; height: 40px; padding: 0; border: 1px dashed #ddd; color: #fff; font-size: 15px; background: #111; text-align: center; line-height: 40px; font-weight: 700; z-index: 10000; -ms-transition: all 0.3s ease;-webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.skip_navi a:focus {top: 0; left: 0;} */
+.skip_navi a {position:relative;z-index:1000;display:block;overflow:hidden;height:0; color: #fff; font-size: 15px;text-align:center;background: #111; font-weight: 700;}
+.skip_navi a:focus {overflow:auto;height:auto;padding:10px 0 ;color:#fff;}
+
+
+/* btn */
+.btns button ,.btns a{margin-left:10px;}
+.btn,.btns{padding-top:20px;text-align:right;}
+.btns button:first-child{margin-left:0;}
+.btns button:last-child{margin-left:7px;}
+.btns a:first-child{margin-left:0;}
+.btns a:last-child{margin-left:7px;}
+.btn button,.btn a{display:inline-block;text-align:center;line-height:37px;width:120px;height:39px;font-size:16px;}
+.btns button,.btns a{display:inline-block;text-align:center;line-height:37px;width:120px;height:39px;font-size:16px;}
+
+
+/* font color */
+
+
+/* 아이콘 */
+
+
+/* header */
+header{position: relative;z-index: 1;}
+
+
+/* footer */
+footer{position:relative;padding: 1rem 0;background:#f9f9f9;font-size: 0.875rem;font-weight: 300;text-align:center;color:#16311e;}
+footer .inner p:first-child{margin-bottom:0.5rem;}
+.btn_top{display:block;position:fixed;right:2%;z-index:9999;bottom:100px;width:50px;height:50px;border-radius:10px;background:#16311e url("../images/btn_top.png")no-repeat 50% 50%;background-size:22px 25px;}
+
+
+
+
+
+
