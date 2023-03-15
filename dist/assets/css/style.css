@@ -37,7 +37,7 @@ nav .gnb {display: flex;flex-direction: row;justify-content: center;align-items:
 .container > section h2{padding:0 15px;margin-bottom:90px;color: #16311e;font-size: 40px;text-align:center;}
 
 /* main_visual */
-.main_visual{position:relative;height:100vh;padding-top:300px;color:#fff;background: #16311e;}
+.main_visual{position:relative;height:100vh;padding-top:300px;color:#fff;}
 .main_visual .txt_box{position:absolute;top: 50%;right: 0;transform: translateY(-70%);text-align: right;}
 .main_visual p {font-weight:900;font-size: 53px;line-height: 1.4;}
 .main_visual p span {display: block;font-size: 45px;font-weight:500;}
@@ -80,15 +80,15 @@ nav .gnb {display: flex;flex-direction: row;justify-content: center;align-items:
 .about p:first-child {padding-bottom: 48px;font-size: 35px;font-weight: 700;line-height: 1.5em;}
 
 /* portfolio_wrap */
-.portfolio_wrap {height:auto !important;background: #738478;}
-.portfolio_wrap .portfolio {position: relative;}
-.portfolio_wrap .tab{margin-top:50px;}
-.portfolio_wrap .tab ul{display:flex;align-items: center;justify-content: center;}
-.portfolio_wrap .tab ul li{margin-right:25px;}
-.portfolio_wrap .tab ul li:last-child{margin:0;}
-.portfolio_wrap .tab ul li a{display:inline-block;width:120px;height: 50px;text-align:center;background:#eee;line-height: 48px;border-radius: 48px;color:#16311e;}
-.portfolio_wrap .tab ul li.on a,.portfolio_wrap .tab ul li:hover a{background:#093115;color:#fff;font-weight:500;}
-.portfolio_wrap .portfolio .num {float: left;
+.portfolio-wrap {height:auto !important;background: #738478;}
+.portfolio-wrap .portfolio {position: relative;}
+.portfolio-wrap .tab{margin-top:50px;}
+.portfolio-wrap .tab ul{display:flex;align-items: center;justify-content: center;}
+.portfolio-wrap .tab ul li{margin-right:25px;}
+.portfolio-wrap .tab ul li:last-child{margin:0;}
+.portfolio-wrap .tab ul li a{display:inline-block;width:120px;height: 50px;text-align:center;background:#eee;line-height: 48px;border-radius: 48px;color:#16311e;}
+.portfolio-wrap .tab ul li.on a,.portfolio-wrap .tab ul li:hover a{background:#093115;color:#fff;font-weight:500;}
+.portfolio-wrap .portfolio .num {float: left;
   margin: 6.56rem 0 0 4.5rem;
   padding-bottom: 6.87rem;
   position: -webkit-sticky;
@@ -99,15 +99,15 @@ nav .gnb {display: flex;flex-direction: row;justify-content: center;align-items:
   font-weight: 700;
   color:#093115
 }
-.portfolio_wrap .portfolio.active .num{color:red;}
-.portfolio_wrap .portfolio .list_box {
+.portfolio-wrap .portfolio.active .num{color:red;}
+.portfolio-wrap .portfolio .list_box {
     position: relative;
     padding-left: 3.56rem;
     padding-top: 28vh;
     padding-bottom: 1.875rem;
 }
-.portfolio_wrap .portfolio .list_box dl{display:flex;align-items:flex-start;height:800px;transition:all .2s ease-in-out}
-.portfolio_wrap .portfolio .list_box dt {
+.portfolio-wrap .portfolio .list_box dl{display:flex;align-items:flex-start;height:800px;transition:all .2s ease-in-out}
+.portfolio-wrap .portfolio .list_box dt {
   width: 39%;
   margin: 0 0 0 4.5rem;
   padding-bottom: 6.87rem;
@@ -120,9 +120,9 @@ nav .gnb {display: flex;flex-direction: row;justify-content: center;align-items:
   color:transparent;
 }
 
-.portfolio_wrap .portfolio .list_box dl.ani dt{color:#16311e;} 
-.portfolio_wrap .portfolio dl:nth-child(2n).ani dt{color:#f5f5f5;}
-.portfolio_wrap .portfolio .list_box  dd {display: block;position:relative;width: 50%;height: 500px;padding: 20px;margin-bottom: 5rem;border: 10px solid #738478;border-radius: 15px;opacity:0;transition: all 2s ease-out;}
+.portfolio-wrap .portfolio .list_box dl.ani dt{color:#16311e;} 
+.portfolio-wrap .portfolio dl:nth-child(2n).ani dt{color:#f5f5f5;}
+.portfolio-wrap .portfolio .list_box  dd {display: block;position:relative;width: 50%;height: 500px;padding: 20px;margin-bottom: 5rem;border: 10px solid #738478;border-radius: 15px;opacity:0;transition: all 2s ease-out;}
 
 @keyframes  ani1{
 0%{bottom:-100px}
