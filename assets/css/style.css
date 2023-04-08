@@ -43,11 +43,10 @@ nav .gnb {display: flex;flex-direction: row;justify-content: center;align-items:
 .main_visual p span {display: block;font-size: 45px;font-weight:500;}
 
 
-/* mouse */
-.ic_mouse{position:absolute;left:50%;bottom:0;transform:translateX(-50%);-webkit-transform:translateX(-50%);width:100%;text-align:center;}
-.ic_mouse .mouse{position:absolute;left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);width:20px;height:30px;margin:0 auto;background:url("../images/ic_mouse.png")no-repeat;}
-.ic_mouse .mouse_in{position:absolute;top:5px;left: 50%; -webkit-transform: translateX(-50%);transform: translateX(-50%);width:5px;height:5px;animation:mouse_in 1s infinite;border-radius:100%;background:#fff;}
-.ic_mouse .txt{display:inline-block;padding-top:45px;color:#fff;font-size:13px;}
+/* scroll */
+.ic-scroll{position: fixed;bottom: 50px;left: 0;display: block;padding-left: 110px;-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);color: #fff;
+}
+.ic-scroll::after{content: '';display: inline-block;position: absolute;top: 50%;left: 0;width: 100px;height: 1px;background-color: #fff;}
 @keyframes mouse_in{
   0% {top:2px;opacity:0;}
   100%{top:45%;opacity:1;}
