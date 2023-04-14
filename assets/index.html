@@ -42,8 +42,6 @@
   <script src="../assets/js/ui.js"></script>
 
 
-  <!-- <script defer src="js/main.js"></script>
-  <script defer src="js/skrollr.js"></script> -->
 </head>
 <body>
   <div id="wrap">
@@ -60,11 +58,10 @@
       <!--gnb-->
       <nav>
         <ul class="gnb">
-          <li class="on"><a href="#content1">HOME</a></li>
-          <li><a href="#content2">ABOUT</a></li>
-          <li><a href="#content3">PORTFOLIO</a></li>
-          <li><a href="#content4">SKILL</a></li>
-          <li><a href="#content5">PROFILE</a></li>
+          <li class="on"><a href="#section1" class="nav-home">HOME</a></li>
+          <li><a href="javascript:;" class="nav-about">ABOUT</a></li>
+          <li><a href="javascript:;" class="nav-portfolio">PORTFOLIO</a></li>
+          <li><a href="javascript:;" class="nav-profile">PROFILE</a></li>
         </ul>
       </nav>
     </header>
@@ -73,18 +70,18 @@
     <!--container-->
     <div id="container" >
       <!--main_visual-->
-        <section id="content1" class="main_visual">
+        <section id="home" class="main_visual">
           <div class="container">
             <h2 class="skip">main</h2>
             <div class="txt_box">
-              <p class="txt1"><strong>PORTFOLIO</strong></p>
+              <strong class="txt1">PORTFOLIO</strong>
               <p class="txt2">WEBPUBLISHER<br><span>KIM HYO JUNG</span></p>
             </div>
           </div>
         </section>
       <!--//main_visual-->
       <!--about-->
-        <section id="content2" class="about">
+        <section id="about" class="about">
           <div class="container">
             <div class="myself_img">
               <p><!--img src="images/hyojung.png" alt="김효정 사진"-->이미지들어갈 곳</p>
@@ -95,8 +92,8 @@
           </div>
         </section>
       <!--//about-->
-      <!--portfolio_wrap-->
-        <section class="portfolio-wrap">
+      <!--portfolio-->
+        <section class="portfolio-wrap" id="portfolio">
           <h2 class="visually-hidden">PORTFOLIO</h2>
           <div class="container">
             <ul>
@@ -294,7 +291,7 @@
         </section> -->
       <!--//skill-->
       <!--profile_wrap-->
-        <section id="content5" class="profile_wrap">
+        <section id="profile" class="profile_wrap">
           <div class="inner">
             <h2 class="visually-hidden">PROFILE</h2>
             <div class="profile">
@@ -366,24 +363,24 @@
     else setTab("");
   });*/
 
-  const portfoilo1 = new Swiper('.pf-swiper', {
-  // Default parameters
-  slidesPerView: '1',
-  spaceBetween: 20,
-  scrollbar: {
-    el: ".swiper-scrollbar-rank",
-    hide: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    type: "progressbar",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  /*const portfoilo1 = new Swiper('.pf-swiper', {
+    // Default parameters
+    slidesPerView: '1',
+    spaceBetween: 20,
+    scrollbar: {
+      el: ".swiper-scrollbar-rank",
+      hide: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
 
-});
+  });*/
 
 
 </script>
