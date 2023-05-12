@@ -26,7 +26,7 @@ nav{}
 nav .gnb {display: flex;flex-direction: row;justify-content: center;align-items: center;}
 .gnb li {flex:1;}
 .gnb li a {position: relative;display: block;padding:15px;font-size: 20px;font-family: 'NanumSquare';transition:color .3s;}
-.gnb li.on a {font-weight: 700;color:#ff7d01;}
+.gnb li a.active {font-weight: 700;color:#ff7d01;}
 .gnb li a:hover{color:#ff7d01;}
 
 

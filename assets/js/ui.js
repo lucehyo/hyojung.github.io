@@ -7,7 +7,7 @@ window.onload = function () {
 
 
   //gnb 스크롤
-  const names = ["home", "about", "portfolio","profile"];
+  const names = ["home","portfolio","profile"];
   names.forEach(name => {
     let section = document.querySelector("#" + name);
     let nav = document.querySelector(".nav-" + name);
@@ -15,7 +15,7 @@ window.onload = function () {
       trigger: section,
       start: "top 40%",
       end: "bottom 40%",
-      toggleClass: {targets: nav, className: "selected"}
+      toggleClass: {targets: nav, className: "active"}
     });
     
     let trigger = ScrollTrigger.create({
