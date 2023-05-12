@@ -1,9 +1,10 @@
 "use strict";
 window.onload = function () {
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-  gsap.to('.txt-box .txt1', { y: 0, opacity: 1, duration: 0.5, delay: 0.35,addClass:"active"});
+  gsap.to('.txt-box .txt1', { y: 0, opacity: 1, duration: 0.5, delay: 0.35});
   gsap.to('.txt-box .name', { y: 0, opacity: 1, duration: 0.5, delay: 0.45});
   gsap.to('.txt-box .txt2', { y: 0, opacity: 1, duration: 0.5, delay: 0.55 });
+  gsap.to('.img-gallery', { y: 0, opacity: 1, duration: 0.5, delay: 0.65 });
 
 
   //gnb 스크롤
@@ -35,6 +36,7 @@ window.onload = function () {
     scrollTrigger: { scrub: 0.3 }
   });
 
+  
   //profile 배경 변경
   let timeline = function () {
     return gsap.timeline().fromTo(

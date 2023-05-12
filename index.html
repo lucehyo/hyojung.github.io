@@ -72,16 +72,63 @@
       <!--main_visual-->
         <section id="home" class="main-visual">
           <div class="container">
-            <h2 class="visually-hidden">main</h2>
             <div class="txt-box">
               <strong class="txt1">PORTFOLIO</strong>
               <span class="name">KIM HYO JUNG</span>
               <span class="txt2">WEBPUBLISHER</span>
             </div>
-            
+            <div class="img-gallery-wrap">
+              <div class="swiper img-gallery">
+                <div class="title"></div>
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide"><span class="img-title">1더존</span><img src="assets/images/thumb-01.png" alt=""></li>
+                  <li class="swiper-slide"><span class="img-title">2사회복지사협회</span><img src="assets/images/thumb-02.png" alt=""></li>
+                  <li class="swiper-slide"><span class="img-title">3더존</span><img src="assets/images/thumb-01.png" alt=""></li>
+                  <li class="swiper-slide"><span class="img-title">4더존</span><img src="assets/images/thumb-01.png" alt=""></li>
+                  <li class="swiper-slide"><span class="img-title">5더존</span><img src="assets/images/thumb-01.png" alt=""></li>
+                  <li class="swiper-slide"><span class="img-title">6더존</span><img src="assets/images/thumb-01.png" alt=""></li>
+                  <li class="swiper-slide"><span class="img-title">7더존</span><img src="assets/images/thumb-01.png" alt=""></li>
+                  <li class="swiper-slide"><span class="img-title">8더존</span><img src="assets/images/thumb-01.png" alt=""></li>
+                  <li class="swiper-slide"><span class="img-title">9더존</span><img src="assets/images/thumb-01.png" alt=""></li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="btn-box">
+                  <div class="swiper-button-prev swiper-button-prev-gallery"></div>
+                  <div class="swiper-button-next swiper-button-next-gallery"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
-      <!--//main_visual-->
+        <!--//main_visual-->
+        <script>
+          
+          //swiper
+          let swiperimg = new Swiper('.img-gallery', {
+            speed: 600,
+            loop:true,
+            navigation: {
+              nextEl: '.swiper-button-next-gallery',
+              prevEl: '.swiper-button-prev-gallery',
+            },
+            pagination: {
+              el: '.swiper-pagination',
+              type: "progressbar",
+            },
+            // autoplay: {
+            //   delay: 3000,
+            // },
+            mousewheel: true,
+            on: {
+              slideChange: function () {
+                const currentSlide = $('.img-gallery .swiper-slide-active');
+                const currentTitle = currentSlide.find('.img-title').text();
+                $('.img-gallery .title').text(currentTitle);
+              },
+            },
+          });
+        </script>
+      
       <!--about-->
         <!--section id="about" class="about">
           <div class="container">

@@ -72,7 +72,7 @@ header{position: relative;z-index: 1;}
 /* footer */
 footer{position:relative;z-index:1;padding:15px 0;background:#f9f9f9;font-size: 14px;line-height:1.4;text-align:center;}
 footer .inner p:first-child{margin-bottom:0.5rem;}
-.btn-top{display:block;position:fixed;right:2%;z-index:9999;bottom:100px;width:50px;height:50px;border-radius:10px;background:url("/assets/images/btn-top.png")no-repeat 50% 50%;background-size:18px 26px;}
+.btn-top{display:block;position:fixed;right:2%;z-index:9999;bottom:100px;width:50px;height:50px;border-radius:10px;background:url("../images/btn-top.png")no-repeat 50% 50%;background-size:18px 26px;}
 
 
 
