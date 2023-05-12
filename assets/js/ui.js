@@ -27,6 +27,13 @@ window.onload = function () {
       gsap.to(window, {scrollTo: trigger.start});
     })
   })
+  
+  // progress
+  gsap.to('progress', {
+    value: 100,
+    ease: 'none',
+    scrollTrigger: { scrub: 0.3 }
+  });
 
   //profile 배경 변경
   let timeline = function () {
@@ -46,7 +53,7 @@ window.onload = function () {
   };
   
   ScrollTrigger.create({
-    trigger: '.profile',
+    trigger: '.portfolio',
     start: 'bottom center',
     end: 'bottom top',
     scrub: !0,
@@ -54,73 +61,19 @@ window.onload = function () {
     markers:true,
   });
 
-
+  let panels = gsap.utils.toArray("section");
+  let tops = panels.map(panel => ScrollTrigger.create({trigger: panel, start: "top top"}));
   
-  //var about = document.querySelector('.about');
-  //gsap.set('.about', { zIndex: (i, target, targets) => targets.length - i });
-  let timeline2 = function () {
-    return gsap.timeline().fromTo(
-      '.about',
-      {
-        yPercent: 0,
-      },
-      {
-        yPercent: -160,
-        ease: 'linear',
-        duration: 5,
-      }
-    );
-  };
-  ScrollTrigger.create({
-    trigger: '.about',
-    start: 'top top',
-    end: '100%',
-    scrub: true,
-    pin: true,
-    animation: timeline2(),
+  panels.forEach((panel, i) => {
+    ScrollTrigger.create({
+      trigger: panel,
+      start: () => panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom", 
+      pin: true, 
+      markers:true,
+      pinSpacing: false 
+    })
   });
 
-  //about
-  /*let timeline4 = function () {
-    return gsap
-      .timeline()
-      .set('.about', {
-        willChange: 'transform',
-      })
-      .fromTo(
-        '.portfolio',
-        {
-          yPercent: -100,
-          opacity: 0.7,
-        },
-        {
-          yPercent: 0,
-          opacity: 1,
-          ease: 'none',
-          duration: 0.4,
-        }
-      )
-      .set('.portfolio', {
-        willChange: 'auto',
-      });
-  };
-  ScrollTrigger.create({
-    trigger: '.about',
-    animation: timeline4(),
-    scrub: !0,
-    start: 'top bottom',
-    //end: () => `+=${about.clientHeight}`,
-  }),
-  /*ScrollTrigger.create({
-    trigger: '.portfolio',
-    scrub: !0,
-    pin: true,
-    start: 'top top',
-    end: '100%',
-  });*/
-
-  
-  /*gsap.set("section", {zIndex: (i, target, targets) => targets.length - i});*/
 
 
   /* btn-top*/
@@ -144,7 +97,7 @@ window.onload = function () {
   
 };
 
-/*function setTab(id) {
+function setTab(id) {
   $(".tabArea").removeClass("on");
   $("#area-" +id).addClass("on");
   $(".pf-box").hide();
@@ -152,6 +105,6 @@ window.onload = function () {
 }
 
 $(document).ready(function() {
-  if("{{area}}" == "") setTab("all");
-  else setTab("{{}}");
-});*/
+	if("" == "") setTab("all");
+	else setTab("");
+});
